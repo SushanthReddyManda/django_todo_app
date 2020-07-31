@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Django</title>
+    </head>
+    <body>
+        <h1>update task</h1>
+        
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form_dict }}
+            <input type="submit",  name = "update task">
+        </form>
+    </body>
+</html>

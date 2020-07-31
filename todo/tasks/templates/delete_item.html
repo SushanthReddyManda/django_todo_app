@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Django</title>
+    </head>
+    <body>
+        <h1>update task</h1>
+        <p>Are u sure u want to delete  "{{ item_name }}"  ???</p>
+        <a href="{% url 'list' %}">Cancel</a>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input type="submit",  name = "confirm">
+        </form>
+    </body>
+</html>
